@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Me Using Element Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <img  alt="">
+    
+    
+    <script>
+        
+        let about = document.createElement('p')
+        about.innerHTML = `My name is Oluwatomilola A. Egwanumku. I was born on the 21st of October, and am in my late 20s. I come from from the family of five with my parents included and we hail from a small town in Osun State,precisely in Odo-Otin Local Government Area.
+        I was born and brought up in Ilesa, where i attended my primary and secondary education before my parents relocated to Ibadan , where I furthered my education into the prestigious University of Ibadan, to study Social Works from the Faculty of Education. I am also a Fashion Entrepreneur,with my brand name as LACARY MADE EMPIRE. My favorite quote is "...never stop moving till you get to the end of the road". I speak English and Yoruba  language fluently. As a Yoruba lady that I am, my favorite delicacy is Amala with Ewedu and stew with lots of assorted. I love to be seen in wears of blue or touch of blue color. I'm a friend to the selected and enemy to some. I love giving back to the community in my own little might and I practice HUMANITY as my religion, irrespective of the race, color and class. I'm an introvert in nature and I love people respecting me in my own world as one. I love witnessing natures at my leisure. Lastly, am married with a lovely family.  `;
+        let aboutme = document.body;
+        aboutme . appendChild(about);
+
+
+        let topic = document.createElement('h1')
+        topic.innerHTML="About me - Using Element Creator";
+        let topicContent = document.body;
+        topicContent .appendChild(topic);
+        topicContent. insertBefore(topic, about);
+
+        
+
+        let img = document.querySelector('img');
+         img.alt="Oluwatomilola A. Egwanumku";
+         img.src = "me.jpg";
+         document.body.appendChild(img);
+         document.body.insertBefore(img, about);
+
+    </script>
+    
+</body>
+</html>
